@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgba(0, 0, 0, .1);
+	font-family: 'Rubik', sans-serif;
+}
+.title {
+	text-align: center;
+	margin: 5rem;
+	user-select: none;
+}
+.cell-container {
+	margin: 5rem auto;
+	border-radius: .5rem;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+	width: 20rem;
+	height: 20rem;
+	overflow: hidden;
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
+}
+.column0, .column1, .column2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(255, 255, 255, .4);
+	width: 6.66rem;
+	height: 6.66rem;
+	user-select: none;
+}
+.line0, .line1, .line2 {
+	display: flex;
+}
+.game-over {
+	display: none;
+	text-align: center;
+	user-select: none;
+}
+.game-over button {
+	margin-top: 1rem;
+	padding: .6rem;
+	background-color: rgba(0, 0, 0, .6);
+	border-radius: .3rem;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+.game-over button:hover {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+.default-cell {
+	background-color: rgb(30, 144, 255);
+}
+.tie-game {
+	background-color: #DC9510;
+}
+.user-won {
+	background-color: green;
+}
+.machine-won {
+	background-color: red;
+}
+
+.enable-cell-container {
+	pointer-events: auto;
+}
+.disable-cell-container {
+	pointer-events: none;
+}
